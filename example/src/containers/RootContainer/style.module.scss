@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 800px;
+  margin: 24px auto;
+}
+
+.workspaceItem {
+  border: solid 1px #888;
+  border-radius: 5px;
+  padding: 12px;
+  flex-grow: 1;
+  width: 100%;
+  background: white;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

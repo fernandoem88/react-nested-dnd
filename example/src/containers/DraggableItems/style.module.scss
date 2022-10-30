@@ -1,0 +1,20 @@
+.hidden {
+  opacity: 0;
+}
+
+.hovered {
+  background: gray;
+}
+
+.item {
+  width: 100%;
+  min-height: 40px;
+  border: solid 1px #ddd;
+  // margin-top: 1.2rem;
+  margin-bottom: 12px;
+  background: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
