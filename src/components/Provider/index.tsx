@@ -29,11 +29,13 @@ const useDroppableContext = (droppableId: string) => {
   return useContext(STORE.droppables[droppableId].context)
 }
 
+const DndCtxProvider = ONDROP_CTX.Provider
+
 const Provider: React.FC<ProviderProps> = (props) => {
   return (
-    <ONDROP_CTX.Provider value={props.onDrop}>
+    <DndCtxProvider value={props.onDrop}>
       <DndProvider backend={props.HTML5Backend}>{props.children}</DndProvider>
-    </ONDROP_CTX.Provider>
+    </DndCtxProvider>
   )
 }
 

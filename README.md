@@ -6,6 +6,7 @@ infinite nested drag and drop library
 
 ```typescript
 import { Draggable, Droppable, NestedDndProvider } from 'react-nested-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
 import { appContext, useOnDrop } from './utils.ts'
 
 const DroppableLists = ({
@@ -76,7 +77,7 @@ const App = () => {
 
   return (
     <appContext.Provider value={appState}>
-      <NestedDndProvider onDrop={onDrop}>
+      <NestedDndProvider onDrop={onDrop} htmlBackend={HTML5Backend}>
         // the workspace is a droppable area
         <Droppable id={'workspace'} accept={['container']}>
           {(wsProvided, wsSnapshot, wsPlacholder) => (
