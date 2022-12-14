@@ -29,6 +29,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", "example", "core.d.ts"],
-  "exclude": ["node_modules", "dist", "src/example"]
+  "include": ["src", "core.d.ts"],
+  "exclude": ["node_modules", "dist", "example"]
 }
