@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
-import {} from 'react-nested-dnd'
+
 import { DroppableLists } from '../DroppableLists'
 import { appContext } from '../RootContainer'
+import { Draggable } from 'react-nested-dnd'
+// import style from './style.module.scss'
 
-import style from './style.module.scss'
+const style = {} as any
 
 export const DraggableItems = (props: {
   container: { id: string; items: string[] }
@@ -24,7 +26,7 @@ export const DraggableItems = (props: {
             index={index}
             type={item.type}
           >
-            {(provided, snapshot) => {
+            {(provided: any, snapshot: any) => {
               return (
                 <div
                   {...provided}

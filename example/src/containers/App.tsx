@@ -1,7 +1,3 @@
-import React from 'react'
+import DndExample from './RootContainer'
 
-const App = () => <div>Hello world</div>
-
-export {}
-
-export default App
+export default DndExample

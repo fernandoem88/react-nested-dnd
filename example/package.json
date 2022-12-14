@@ -1,8 +1,9 @@
 {
-  "name": "react-nested-dnd",
+  "name": "react-nested-dnd-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
+  "type": "commonjs",
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
     "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
@@ -11,15 +12,15 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "cypress": "file:../node_modules/cypress",
     "@types/jest": "file:../node_modules/@types/jest",
     "@types/node": "file:../node_modules/@types/node",
-    "@types/react": "file:../node_modules/@types/react",
     "@types/react-dom": "file:../node_modules/@types/react-dom",
-    "react": "file:../node_modules/react",
+    "@types/react": "file:../node_modules/@types/react",
+    "cypress": "file:../node_modules/cypress",
     "react-dom": "file:../node_modules/react-dom",
     "react-nested-dnd": "file:..",
     "react-scripts": "file:../node_modules/react-scripts",
+    "react": "file:../node_modules/react",
     "typescript": "file:../node_modules/typescript"
   },
   "devDependencies": {
