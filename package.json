@@ -71,6 +71,9 @@
     "drag",
     "drop"
   ],
+  "exports": {
+    ".": "./dist/index.modern.js"
+  },
   "files": [
     "dist"
   ]
