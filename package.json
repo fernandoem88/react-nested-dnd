@@ -1,6 +1,6 @@
 {
   "name": "react-nested-dnd",
-  "version": "1.0.0-beta.rc-1",
+  "version": "1.0.0-beta.rc-2",
   "homepage": "https://www.linkedin.com/in/fernando-ekutsu-mondele-67405484/",
   "author": {
     "name": "Fernando Ekutsu Mondele",
@@ -71,6 +71,7 @@
     "drag",
     "drop"
   ],
+  "type": "module",
   "exports": {
     ".": "./dist/index.modern.js"
   },
