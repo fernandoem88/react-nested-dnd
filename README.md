@@ -2,10 +2,15 @@
 
 infinite nested drag and drop library
 
+# example
+
+try it out with this [code sandbox example](https://codesandbox.io/p/sandbox/delicate-fast-hbm2q7?file=%2Fpages%2Findex.tsx&selection=%5B%7B%22endColumn%22%3A48%2C%22endLineNumber%22%3A15%2C%22startColumn%22%3A48%2C%22startLineNumber%22%3A15%7D%5D)
+
 # how to use
 
 ```typescript
-import { Draggable, Droppable, NestedDndProvider } from 'react-nested-dnd'
+import React from 'react'
+import { Draggable, Droppable, Provider } from 'react-nested-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { appContext, useOnDrop } from './utils.ts'
 
@@ -77,7 +82,7 @@ const App = () => {
 
   return (
     <appContext.Provider value={appState}>
-      <NestedDndProvider onDrop={onDrop} htmlBackend={HTML5Backend}>
+      <Provider onDrop={onDrop} htmlBackend={HTML5Backend}>
         // the workspace is a droppable area
         <Droppable id={'workspace'} accept={['container']}>
           {(wsProvided, wsSnapshot, wsPlacholder) => (
@@ -109,7 +114,7 @@ const App = () => {
             </div>
           )}
         </Droppable>
-      </NestedDndProvider>
+      </Provider>
     </appContext.Provider>
   )
 }
