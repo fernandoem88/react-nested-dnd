@@ -4,7 +4,7 @@ infinite nested drag and drop library
 
 # example
 
-try it out with this [code sandbox example](https://codesandbox.io/p/sandbox/delicate-fast-hbm2q7?file=%2Fpages%2Findex.tsx&selection=%5B%7B%22endColumn%22%3A48%2C%22endLineNumber%22%3A15%2C%22startColumn%22%3A48%2C%22startLineNumber%22%3A15%7D%5D)
+try it out with this [sandbox example](https://codesandbox.io/p/sandbox/delicate-fast-hbm2q7?file=%2Fpages%2Findex.tsx&selection=%5B%7B%22endColumn%22%3A48%2C%22endLineNumber%22%3A15%2C%22startColumn%22%3A48%2C%22startLineNumber%22%3A15%7D%5D)
 
 # Components
 
